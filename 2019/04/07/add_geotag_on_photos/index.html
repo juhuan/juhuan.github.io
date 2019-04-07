@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo,">
+  <meta name="keywords" content="gps,gpx,exif,geotag,摄影,">
 
 
 
@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="hexo 安装笔记 拥有一个 github 账户 新建一个 repo，名字必须是juhuan.github.io 安装 node 和 npm 安装 hexo，初始化仓库 安装 next 主题  12345678910111213141516npm install hexo -g #安装Hexonpm update hexo -g #升级hexo init #初始化博客hexo n &quot;我的博客&quot; =">
-<meta name="keywords" content="hexo">
+<meta name="description" content="Mac 给照片添加 GPS 信息偶然在微信看到一篇相机获取 GPS 定位信息的文章，想到之前单反甚至黑卡都没有 GPS 信息甚是不方便，趁假期有空就想实践下。基本思路：  相机和手机同步时间 手机记录 GPS 信息 读取 gpx 写入照片 exif  1. 相机和手机同步时间2. 手机记录 GPS 信息原文中的手机软件还要收费，想到六只脚貌似也有导出 gpx 的功能，就直接用六只脚吧，手机里现成的">
+<meta name="keywords" content="gps,gpx,exif,geotag,摄影">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 安装笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/07/hexo_init/index.html">
+<meta property="og:title" content="Mac 给照片添加 GPS 信息">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/add_geotag_on_photos/index.html">
 <meta property="og:site_name" content="俱欢的博客">
-<meta property="og:description" content="hexo 安装笔记 拥有一个 github 账户 新建一个 repo，名字必须是juhuan.github.io 安装 node 和 npm 安装 hexo，初始化仓库 安装 next 主题  12345678910111213141516npm install hexo -g #安装Hexonpm update hexo -g #升级hexo init #初始化博客hexo n &quot;我的博客&quot; =">
+<meta property="og:description" content="Mac 给照片添加 GPS 信息偶然在微信看到一篇相机获取 GPS 定位信息的文章，想到之前单反甚至黑卡都没有 GPS 信息甚是不方便，趁假期有空就想实践下。基本思路：  相机和手机同步时间 手机记录 GPS 信息 读取 gpx 写入照片 exif  1. 相机和手机同步时间2. 手机记录 GPS 信息原文中的手机软件还要收费，想到六只脚貌似也有导出 gpx 的功能，就直接用六只脚吧，手机里现成的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-06T17:32:28.530Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/3fc5c2e2ly1g1ufm72kz0j225s1cqk3q.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/3fc5c2e2ly1g1ufzkv4knj21n80zkhcy.jpg">
+<meta property="og:updated_time" content="2019-04-07T14:38:36.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 安装笔记">
-<meta name="twitter:description" content="hexo 安装笔记 拥有一个 github 账户 新建一个 repo，名字必须是juhuan.github.io 安装 node 和 npm 安装 hexo，初始化仓库 安装 next 主题  12345678910111213141516npm install hexo -g #安装Hexonpm update hexo -g #升级hexo init #初始化博客hexo n &quot;我的博客&quot; =">
+<meta name="twitter:title" content="Mac 给照片添加 GPS 信息">
+<meta name="twitter:description" content="Mac 给照片添加 GPS 信息偶然在微信看到一篇相机获取 GPS 定位信息的文章，想到之前单反甚至黑卡都没有 GPS 信息甚是不方便，趁假期有空就想实践下。基本思路：  相机和手机同步时间 手机记录 GPS 信息 读取 gpx 写入照片 exif  1. 相机和手机同步时间2. 手机记录 GPS 信息原文中的手机软件还要收费，想到六只脚貌似也有导出 gpx 的功能，就直接用六只脚吧，手机里现成的">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/3fc5c2e2ly1g1ufm72kz0j225s1cqk3q.jpg">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/07/hexo_init/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/07/add_geotag_on_photos/">
 
 
 
 
 
-  <title>hexo 安装笔记 | 俱欢的博客</title>
+  <title>Mac 给照片添加 GPS 信息 | 俱欢的博客</title>
   
 
 
@@ -233,7 +236,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/hexo_init/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/add_geotag_on_photos/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="俱欢">
@@ -250,7 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo 安装笔记</h1>
+          <h1 class="post-title" itemprop="name headline">Mac 给照片添加 GPS 信息</h1>
         
 
         <div class="post-meta">
@@ -262,7 +265,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-07T01:22:35+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-07T00:00:00+08:00">
                 2019-04-07
               </time>
             
@@ -285,19 +288,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/tool/" itemprop="url" rel="index">
-                    <span itemprop="name">tool</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/tool/blog/" itemprop="url" rel="index">
-                    <span itemprop="name">blog</span>
+                  <a href="/categories/摄影/" itemprop="url" rel="index">
+                    <span itemprop="name">摄影</span>
                   </a>
                 </span>
 
@@ -333,18 +325,19 @@
       
 
       
-        <h1 id="hexo-安装笔记"><a href="#hexo-安装笔记" class="headerlink" title="hexo 安装笔记"></a>hexo 安装笔记</h1><ol>
-<li>拥有一个 github 账户</li>
-<li>新建一个 repo，名字必须是<strong>juhuan</strong>.github.io</li>
-<li>安装 node 和 npm</li>
-<li>安装 hexo，初始化仓库</li>
-<li>安装 next 主题</li>
+        <h1 id="Mac-给照片添加-GPS-信息"><a href="#Mac-给照片添加-GPS-信息" class="headerlink" title="Mac 给照片添加 GPS 信息"></a>Mac 给照片添加 GPS 信息</h1><p>偶然在微信看到一篇<a href="https://mp.weixin.qq.com/s/a4Mnbo5HsOsFn7fgk2Pdbg" target="_blank" rel="noopener">相机获取 GPS 定位信息的文章</a>，想到之前单反甚至黑卡都没有 GPS 信息甚是不方便，趁假期有空就想实践下。基本思路：</p>
+<ol>
+<li>相机和手机同步时间</li>
+<li>手机记录 GPS 信息</li>
+<li>读取 gpx 写入照片 exif</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g <span class="comment">#安装Hexo</span></span><br><span class="line">npm update hexo -g <span class="comment">#升级</span></span><br><span class="line">hexo init <span class="comment">#初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line"></span><br><span class="line">hexo server <span class="comment">#Hexo会监视文件变动并自动更新，无须重启服务器</span></span><br><span class="line">hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line">hexo clean <span class="comment">#清除缓存，若是网页正常情况下可以忽略这条命令</span></span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next   <span class="comment"># 安装next主题</span></span><br></pre></td></tr></table></figure>
-<h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><p>vscode 安装 picGo 插件。<br>设置为微博图床。</p>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><blockquote>
-<p>参考：<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a><br>Next 参考： <a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/theme-settings.html</a><br>主题配置： <a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/theme-settings.html</a><br>第三方： <a href="http://theme-next.iissnan.com/third-party-services.html#algolia-search" target="_blank" rel="noopener">http://theme-next.iissnan.com/third-party-services.html#algolia-search</a><br>来必力： <a href="https://www.livere.com/my_Livere" target="_blank" rel="noopener">https://www.livere.com/my_Livere</a> &gt; <a href="https://hexo.io/zh-cn/docs/tag-plugins" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/tag-plugins</a></p>
-</blockquote>
+<h2 id="1-相机和手机同步时间"><a href="#1-相机和手机同步时间" class="headerlink" title="1. 相机和手机同步时间"></a>1. 相机和手机同步时间</h2><h2 id="2-手机记录-GPS-信息"><a href="#2-手机记录-GPS-信息" class="headerlink" title="2. 手机记录 GPS 信息"></a>2. 手机记录 GPS 信息</h2><p>原文中的手机软件还要收费，想到<code>六只脚</code>貌似也有导出 gpx 的功能，就直接用<code>六只脚</code>吧，手机里现成的软件。</p>
+<p>记录完之后将运动的 gpx 导出，传输到 Mac 端。</p>
+<h2 id="3-读取-gpx-写入照片-exif"><a href="#3-读取-gpx-写入照片-exif" class="headerlink" title="3. 读取 gpx 写入照片 exif"></a>3. 读取 gpx 写入照片 exif</h2><p>本想按部就班直接用 lightroom 的，但是。。我 Mac 上的 lightroom 过期了，只能退而求其次，寻找替代品。APP Store 搜了下都是收费软件，PASS。去 github 碰碰运气，还真的找到一个不错的软件！<a href="https://github.com/marchyman/GeoTag" target="_blank" rel="noopener">GeoTag</a></p>
+<p>安装命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install geotag</span><br></pre></td></tr></table></figure>
+<p>安装完在 Launchpad 即可看到！<br><img src="https://ws1.sinaimg.cn/large/3fc5c2e2ly1g1ufm72kz0j225s1cqk3q.jpg" alt="20190407221943.jpg"><br>使用方式也很无脑，打开软件后把照片和 gpx 文件都拖进去，全选列表中的图片右键点击<code>Locn from trace</code>。经纬度信息就加好了！<br><img src="https://ws1.sinaimg.cn/large/3fc5c2e2ly1g1ufzkv4knj21n80zkhcy.jpg" alt="20190407223259.png"></p>
+<p>注意：首次使用需要配置一个备份的路径。我选的/temp 目录下，方便我清理文件。</p>
 
       
     </div>
@@ -362,7 +355,15 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/gps/" rel="tag"># gps</a>
+          
+            <a href="/tags/gpx/" rel="tag"># gpx</a>
+          
+            <a href="/tags/exif/" rel="tag"># exif</a>
+          
+            <a href="/tags/geotag/" rel="tag"># geotag</a>
+          
+            <a href="/tags/摄影/" rel="tag"># 摄影</a>
           
         </div>
       
@@ -375,15 +376,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/07/huawei_p20/" rel="next" title="华为 P20">
-                <i class="fa fa-chevron-left"></i> 华为 P20
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/07/huawei_p20/" rel="prev" title="华为 P20">
+                华为 P20 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -520,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-安装笔记"><span class="nav-number">1.</span> <span class="nav-text">hexo 安装笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#图床"><span class="nav-number">1.1.</span> <span class="nav-text">图床</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-number">1.2.</span> <span class="nav-text">附录</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac-给照片添加-GPS-信息"><span class="nav-number">1.</span> <span class="nav-text">Mac 给照片添加 GPS 信息</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相机和手机同步时间"><span class="nav-number">1.1.</span> <span class="nav-text">1. 相机和手机同步时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-手机记录-GPS-信息"><span class="nav-number">1.2.</span> <span class="nav-text">2. 手机记录 GPS 信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-读取-gpx-写入照片-exif"><span class="nav-number">1.3.</span> <span class="nav-text">3. 读取 gpx 写入照片 exif</span></a></li></ol></li></ol></div>
             
 
           </div>
