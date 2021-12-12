@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T08:56:11.986Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="I3zRf2P64RLP-gyfs5_1" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-12T08:57:11.555Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="rKYpoo9Y5M3AcBy6LqJw" version="15.9.4" type="github">
   <diagram id="4o_kxBV8KD6mXfQUHRYx" name="Page-1">
     <mxGraphModel dx="696" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -64,7 +64,7 @@
         <mxCell id="OeqKEZ6VBrgcEEyRa5bR-15" value="如果是跨行的POS，中间还有银联，银联负责加解密、替换银联&amp;amp;发卡行之间的pinblock" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
           <mxGeometry x="40" y="380" width="80" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-16" value="CVV、MAC的验证，同密码" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-16" value="CVV、MAC（例如U-KEY hash出来的MD5）的验证，同密码" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
           <mxGeometry x="170" y="380" width="80" height="100" as="geometry" />
         </mxCell>
       </root>
