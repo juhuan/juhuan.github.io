@@ -1,1 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T08:44:15.388Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" version="15.9.4" etag="Q_sCv8Zj2QTVDRniu71O" type="github"><diagram id="4o_kxBV8KD6mXfQUHRYx">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-12T08:53:16.181Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="F9baJr3z0EOCWaUWjUFN" version="15.9.4" type="github">
+  <diagram id="4o_kxBV8KD6mXfQUHRYx" name="Page-1">
+    <mxGraphModel dx="696" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-4" value="获取密钥" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-1" target="OeqKEZ6VBrgcEEyRa5bR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-1" target="OeqKEZ6VBrgcEEyRa5bR-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-1" value="前端密码键盘" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-1" target="OeqKEZ6VBrgcEEyRa5bR-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-3" target="OeqKEZ6VBrgcEEyRa5bR-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-3" target="OeqKEZ6VBrgcEEyRa5bR-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-3" value="安全系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-6" value="加密输入的“密码”" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-1" target="OeqKEZ6VBrgcEEyRa5bR-1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="60" />
+              <mxPoint x="170" y="60" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-9" value="密钥要素（机构、渠道、环境）&lt;br&gt;盐（卡号、客户账号）&lt;br&gt;密钥名称（zpk、pvk）&lt;br&gt;pin block（前端上送的加密密码段）&lt;br&gt;pin offset（保存在DB的偏移量）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;align=left;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-7" target="OeqKEZ6VBrgcEEyRa5bR-3">
+          <mxGeometry x="-0.6" y="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-7" target="OeqKEZ6VBrgcEEyRa5bR-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-7" value="核心借记卡系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OeqKEZ6VBrgcEEyRa5bR-3" target="OeqKEZ6VBrgcEEyRa5bR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="50" />
+              <mxPoint x="530" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OeqKEZ6VBrgcEEyRa5bR-11" value="获取密钥；加解密" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OeqKEZ6VBrgcEEyRa5bR-10">
+          <mxGeometry x="-0.5889" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
