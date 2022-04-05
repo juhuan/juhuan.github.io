@@ -1,4 +1,6 @@
 <!--# In-store payment component-->
+博物馆
+- [福建省博物馆-牛转乾坤](博物馆/福建省博物馆-牛转乾坤.md)
 
 Tricks
 
